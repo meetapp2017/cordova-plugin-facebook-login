@@ -1,15 +1,15 @@
-/********* facebook-login.m Cordova Plugin Implementation *******/
+/********* FacebookLogin.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
 
-@interface facebook-login : CDVPlugin {
+@interface FacebookLogin : CDVPlugin {
   // Member variables go here.
 }
 
 - (void)loginWithFacebook:(CDVInvokedUrlCommand*)command;
 @end
 
-@implementation facebook-login
+@implementation FacebookLogin
 
 - (void)loginWithFacebook:(CDVInvokedUrlCommand*)command
 {

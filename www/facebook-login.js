@@ -7,5 +7,5 @@ var exec = require('cordova/exec');
  * @param {Function} error - Callback при грешка
  */
 exports.loginWithFacebook = function (options, success, error) {
-    exec(success, error, 'facebook-login', 'loginWithFacebook', [options]);
+    exec(success, error, 'FacebookLogin', 'loginWithFacebook', [options]);
 };
