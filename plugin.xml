@@ -11,7 +11,7 @@
     <platform name="ios">
         <!-- Деклариране на функционалност -->
         <config-file parent="/*" target="config.xml">
-            <feature name="FacebookLogin">
+            <feature name="facebook-login">
                 <param name="ios-package" value="FacebookLogin" />
             </feature>
         </config-file>
