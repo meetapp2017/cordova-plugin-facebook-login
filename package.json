@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-facebook-login",
+  "version": "1.0.0",
+  "description": "A Cordova plugin for Facebook login integration.",
+  "main": "plugin.xml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "facebook",
+    "login"
+  ],
+  "author": "info@softmex.org",
+  "license": "MIT"
+}

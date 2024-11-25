@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.softmex.facebooklogin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Facebook Login</name>
+    <js-module name="facebook-login" src="www/facebook-login.js">
+        <clobbers target="cordova.plugins.facebookLogin" />
+    </js-module>
+
+    <!-- iOS Configuration -->
+    <platform name="ios">
+        <!-- Деклариране на функционалност -->
+        <config-file parent="/*" target="config.xml">
+            <feature name="facebook-login">
+                <param name="ios-package" value="facebook_login" />
+            </feature>
+        </config-file>
+        <!-- Добавяне на изходния файл -->
+        <source-file src="src/ios/facebook-login.m" />
+    </platform>
+
+    <!-- Android Configuration -->
+    <platform name="android">
+        <!-- Деклариране на функционалност -->
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="facebook-login">
+                <param name="android-package" value="com.softmex.facebooklogin.FacebookLogin" />
+            </feature>
+        </config-file>
+        <!-- Указване на permissions в AndroidManifest.xml -->
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+        <!-- Добавяне на изходния файл -->
+        <source-file src="src/android/FacebookLogin.java" target-dir="src/com/softmex/facebooklogin" />
+    </platform>
+</plugin>
