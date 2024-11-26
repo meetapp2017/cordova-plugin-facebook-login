@@ -42,6 +42,7 @@
             } else {
                 // След успешен вход, веднага взимаме профилната информация
                 [self getUserProfileWithCommand:command];
+                return;
             }
 
             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
